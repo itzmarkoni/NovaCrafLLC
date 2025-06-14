@@ -1,5 +1,5 @@
 shell.execute("rm", "main.lua")
-shell.execute("wget", "https://github.com/itzmarkoni/NovaCrafLLC/raw/refs/heads/main/main.lua")
-sleep(2)
+shell.execute("wget", "https://github.com/itzmarkoni/NovaCrafLLC/raw/refs/heads/main/main.lua?raw=true")
+sleep(5)
 local main = require("main")
 main.run()
