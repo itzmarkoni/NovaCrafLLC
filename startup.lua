@@ -1,4 +1,4 @@
-local monitor = peripheral.wrap("top")
+local monitor = peripheral.find("monitor")
 local modem = peripheral.wrap("back")
 monitor.setScale(1)
 local maxWidth, maxHeight = monitor.getSize()
