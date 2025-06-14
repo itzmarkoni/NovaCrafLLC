@@ -1,5 +1,5 @@
 local function run()
-    local monitor = peripheral.wrap("monitor")
+    local monitor = peripheral.wrap("top")
     local modem = peripheral.wrap("back")
     print(monitor)
     monitor.setScale(1)
