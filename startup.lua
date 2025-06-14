@@ -1,7 +1,5 @@
 shell.execute("rm", "main.lua")
-local request = http.get("https://raw.githubusercontent.com/itzmarkoni/NovaCrafLLC/refs/heads/main/main.lua?refresh")
-request.close()
-shell.execute("wget", "https://raw.githubusercontent.com/itzmarkoni/NovaCrafLLC/refs/heads/main/main.lua?refresh")
+shell.execute("wget", "https://github.com/itzmarkoni/NovaCrafLLC/raw/refs/heads/main/main.lua")
 sleep(2)
 local main = require("main")
 main.run()
