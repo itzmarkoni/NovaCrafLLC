@@ -18,6 +18,9 @@ local function run()
         print(message)
         monitor.write(message)
         y=y+1
+        if(y > maxHeight) then 
+            monitor.scroll(1) 
+        end
     end
 end
 
