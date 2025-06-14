@@ -16,11 +16,11 @@ local function run()
     while true do
         local _, _, _, _, message = os.pullEvent("modem_message")
         monitor.setCursorPos(1, y)
-        --print(message)
-        --monitor.write(message)
-        local cursorX, cursorY = monitor.getCursorPos()
-        monitor.write(cursorY)
-        print(cursorX)
+        print(message)
+        monitor.write(message)
+        -- local cursorX, cursorY = monitor.getCursorPos()
+        -- monitor.write(cursorY)
+        -- print(cursorX)
         y=y+1
         if(y > maxHeight) then
             y=maxHeight
