@@ -2,7 +2,7 @@ local function run()
     local monitor = peripheral.wrap("top")
     local modem = peripheral.wrap("back")
     print(monitor)
-    monitor.setScale(1)
+    monitor.setTextScale(1)
     local maxWidth, maxHeight = monitor.getSize()
     local y = 1
     monitor.setCursorPos(1, y)
