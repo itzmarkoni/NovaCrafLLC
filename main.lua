@@ -1,5 +1,5 @@
 local function run()
-    local monitor = peripheral.find("monitor")
+    local monitor = peripheral.wrap("monitor")
     local modem = peripheral.wrap("back")
     monitor.setScale(1)
     local maxWidth, maxHeight = monitor.getSize()
